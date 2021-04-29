@@ -1,0 +1,266 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    /* margin: 0; */
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ==========HEADER========== */
+
+.header {
+    height: 110px;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+}
+
+.header_logo {
+    position: absolute;
+    min-width: 210px;
+    min-height: 210px;
+    background-color: #000000;
+}
+
+.header_menu {
+    display: flex;
+    margin-right: 244px;
+    margin-left: 280px;
+}
+
+.header_menu_item:not(last-child){
+    margin-right: 40px;
+
+}
+
+.header_navigation {
+    margin-right: 40px;
+    width: 95px;
+    height: 45px;
+    background-color: #000000;
+}
+
+.button {
+    min-width: 110px;
+    height: 50px;
+}
+/* ==========END HEADER========== */
+
+/* /* ==========BANER========== */
+.baner{
+    background-color: rgb(137, 151, 14);
+}
+
+.baner_wrapper{
+    min-height: 600px;
+    padding-top: 205px;
+    
+}
+
+.baner_title{
+    margin-bottom: 5px;
+}
+
+.baner_text{
+    margin-bottom: 35px;
+}
+/* /* ==========END BANER========== */
+/* /* ==========Products========== */
+.products {
+    padding: 100px 0;
+    background-color: rgb(199, 180, 180);
+}
+
+.products_title{
+    margin-bottom: 60px;
+}
+
+.products_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_list_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 25px;
+    min-width: 270px;
+    background-color: rgb(51, 50, 50);
+}
+
+.product_name{
+    margin: 20px 0 5px 0;
+}
+
+.product_description{
+    margin-bottom: 15px;
+}
+
+.price{
+    margin-bottom: 15px;
+}
+
+.products_button {
+    width: 240px;
+    margin-top: 40px;
+
+}
+/* Поставь по центру правильно */
+.products_button{
+    margin-left: 465px;
+}
+/* Поставь по центру правильно */
+
+/* /* ==========END Products========== */
+
+/* /* ==========ABOUT US========== */
+.about_us{
+    padding: 100px 0;
+    height: 480px;
+    background-color: rgb(252, 191, 191);
+}
+
+.about_us_title{
+    margin-bottom: 40px;
+}
+
+.about_us_text{
+    max-width: 570px;
+    margin-bottom: 50px;
+}
+/* /* ==========END ABOUT US========== */
+/* /* ==========BLOG========== */
+.blog{
+    padding: 100px 0;
+    background-color: rgb(145, 141, 141);
+}
+
+.blog_title{
+    margin-bottom: 50px;
+}
+
+.blog_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_list_item{
+    max-width: 370px;
+    background-color: rgb(82, 47, 240);
+}
+
+.blog_img_wrapper{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.more_button{
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+}
+
+.blog_date{
+    margin-bottom: 18px;
+}
+
+.blog_list_item_title{
+    margin-bottom: 5px;
+}
+/* /* ==========END BLOG========== */
+/* /* ==========RECIPES========== */
+.recipes{
+     padding: 100px 0;
+     background-color: rgb(163, 241, 18);
+}
+
+.recipes_title{
+    margin-bottom: 50px;
+}
+
+.recipes_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes_img_wrapper{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.recipes_link_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* /* ==========END RECIPES========== */
+/* /* ==========FOOTER========== */
+.footer{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(253, 157, 113);
+}
+
+.footer_list_title{
+    margin-bottom: 20px;
+}
+
+.footer_list_item:not(:last-child){
+    margin-bottom: 15px;
+}
